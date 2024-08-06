@@ -1,0 +1,80 @@
+.aside {
+  background-color: aliceblue;
+  display: inline-block;
+  width: 232px;
+  height: 252px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+  background: rgb(255, 255, 255);
+  flex-shrink: 0;
+}
+
+.title {
+  color: rgb(74, 74, 74);
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 20px 0 10px 20px;
+}
+
+.filterLabel {
+  color: rgb(74, 74, 74);
+  font-family: Open Sans;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-left: 20px;
+  padding-left: 30px;
+  position: relative;
+  user-select: none;
+}
+
+.filterItem {
+  padding: 10px 0;
+}
+
+.filterItem:hover {
+  background-color: #f1fcff;
+}
+
+.filterInput {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.checkBox {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border: 1px solid rgb(154, 187, 206);
+  border-radius: 2px;
+  margin-left: -30px;
+}
+
+.filterInput:checked {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 6px;
+  border-bottom: 2px solid rgb(33, 150, 243);
+  border-left: 2px solid rgb(33, 150, 243);
+  transform: rotate(-45deg);
+  top: 4px;
+  left: 4px;
+}
+
+@media (max-width: 425px) {
+  .aside {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

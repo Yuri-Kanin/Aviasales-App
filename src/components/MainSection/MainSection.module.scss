@@ -1,0 +1,10 @@
+.mainSection {
+  margin-left: 20px;
+}
+
+@media (max-width: 425px) {
+  .mainSection {
+    width: 100%;
+    margin: 0;
+  }
+}

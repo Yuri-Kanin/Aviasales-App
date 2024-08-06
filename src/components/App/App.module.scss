@@ -1,0 +1,17 @@
+body {
+  background: #f3f7fa;
+}
+
+.application {
+  display: flex;
+  padding: 20px;
+  width: 795px;
+}
+
+@media (max-width: 425px) {
+  .application {
+    width: 100%;
+    display: block;
+    padding: 10px;
+  }
+}

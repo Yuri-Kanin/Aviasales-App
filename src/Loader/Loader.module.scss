@@ -1,0 +1,48 @@
+.loader {
+  display: flex;
+  border: 1px solid rgb(223, 229, 236);
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  width: 502px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.image {
+  height: 30px;
+  width: 30px;
+  display: inline-block; /* Позволяет элементу вращаться */
+  animation: rotateAnimation 2s linear infinite;
+  @keyframes rotateAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(720deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+.text {
+  display: inline;
+  color: rgb(160, 176, 185);
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+@media (max-width: 425px) {
+  .loader {
+    width: 100%;
+  }
+}

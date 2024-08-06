@@ -1,0 +1,17 @@
+.mainLogo {
+  width: 795px;
+  margin: 20px;
+  text-align: center;
+  overflow: visible;
+}
+
+@media (max-width: 425px) {
+  .mainLogo {
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+  }
+  .image {
+    height: 40px;
+  }
+}
